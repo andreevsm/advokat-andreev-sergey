@@ -1,9 +1,10 @@
-.header {
+.footer {
   background-color: #3f6c91;
+  padding: 1.2rem;
 
-  &__subtitle {
-    font-size: 1.2rem;
+  &__paragraph {
     color: white;
     font-weight: bold;
+    font-family: sans-serif;
   }
 }

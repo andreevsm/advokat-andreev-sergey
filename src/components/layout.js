@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from './Header';
+import Footer from './Footer';
 import './layout.css';
 
 const Layout = ({ children }) => {
@@ -17,26 +18,19 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: '0 auto',
-          maxWidth: 960,
-          padding: '0 1.0875rem 1.45rem',
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          ©
-          {' '}
-          {new Date().getFullYear()}
-          , Built with
-          {' '}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+      <div style={{ flex: 1 }}>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <div
+          style={{
+            padding: '1.2rem',
+          }}
+        >
+          <main>{children}</main>
+        </div>
       </div>
-    </>
+      <Footer />
+    </div>
   );
 };
 

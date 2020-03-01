@@ -15,7 +15,6 @@
     "gatsby-plugin-sitemap": "^2.2.27",
     "gatsby-source-filesystem": "^2.1.48",
     "gatsby-transformer-sharp": "^2.3.16",
-    "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -30,6 +29,7 @@
     "eslint-plugin-react": "^7.18.3",
     "ghooks": "^2.0.4",
     "lint-staged": "^10.0.8",
+    "node-sass": "^4.13.1",
     "prettier": "^1.19.1",
     "stylelint": "^13.2.0",
     "stylelint-config-standard": "^20.0.0"
@@ -59,7 +59,7 @@
   },
   "lint-staged": {
     "*.js": "npm run lint",
-    "*.@(scss|css)": "npm run stylelint"
+    "*.@(scss)": "npm run stylelint"
   },
   "config": {
     "ghooks": {
