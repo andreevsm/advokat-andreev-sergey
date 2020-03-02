@@ -3,7 +3,6 @@ module.exports = {
     title: 'Адвокат Андреев Сергей Сергеевич',
     description: 'Услуги адвоката в городе Геленджик адвокат Андреев Сергей Сергеевич',
     author: '@andreevsm',
-    siteUrl: 'https://advokat-andreev-sergey.now.sh/',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
