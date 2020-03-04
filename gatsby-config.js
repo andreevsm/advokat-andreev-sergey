@@ -27,8 +27,6 @@ module.exports = {
         path: `${__dirname}/src/components`,
       },
     },
-    // 'gatsby-transformer-sharp',
-    // 'gatsby-plugin-sharp',
     'gatsby-plugin-sass',
     // 'gatsby-plugin-sitemap',
     // {
