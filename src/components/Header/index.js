@@ -2,11 +2,10 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-// import Image from '../image';
-
 import './index.scss';
 
 const Header = ({ siteTitle }) => (
+
   <header className="header">
     <div
       style={{

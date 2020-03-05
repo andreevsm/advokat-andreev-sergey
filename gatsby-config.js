@@ -28,6 +28,15 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    // {
+    //   resolve: 'gatsby-source-googlemaps-geocoding',
+    //   options: {
+    //     key: 'genial-beaker-232214',
+    //     address: 'Gelendzhik',
+    //   },
+    // },
     // 'gatsby-plugin-sitemap',
     // {
     //   resolve: 'gatsby-plugin-manifest',
