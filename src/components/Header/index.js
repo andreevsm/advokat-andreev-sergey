@@ -29,6 +29,40 @@ const Header = ({ siteTitle }) => (
       </h1>
       <h2 className="header__subtitle">8-918-111-11-11</h2>
     </div>
+    <nav>
+      <ul>
+        <li style={{
+          display: 'inline-block',
+          marginRight: '10px',
+        }}
+        >
+          <Link
+            to="/"
+            style={{
+              fontWeight: 'bold',
+              color: 'white',
+            }}
+          >
+            Главная
+          </Link>
+        </li>
+        <li style={{
+          display: 'inline-block',
+          marginRight: '10px',
+        }}
+        >
+          <Link
+            to="/contacts"
+            style={{
+              fontWeight: 'bold',
+              color: 'white',
+            }}
+          >
+            Контакты
+          </Link>
+        </li>
+      </ul>
+    </nav>
   </header>
 );
 
