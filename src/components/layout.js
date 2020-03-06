@@ -25,10 +25,11 @@ const Layout = ({ children }) => {
           style={{
             maxWidth: '1024px',
             width: '100%',
-            margin: '0 auto',
+            margin: '30px auto',
+            padding: '0 10px',
           }}
         >
-          <main className="layout__main">{children}</main>
+          <main>{children}</main>
         </div>
       </div>
       <Footer />

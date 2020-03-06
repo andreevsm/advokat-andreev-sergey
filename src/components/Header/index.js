@@ -6,7 +6,7 @@ import './index.scss';
 
 const Header = ({ siteTitle }) => (
 
-  <header className="header">
+  <header className="header" style={{ padding: '0 10px' }}>
     <div style={{ maxWidth: 1024, width: '100%', margin: '0 auto' }}>
       <div
         style={{
