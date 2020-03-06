@@ -1,96 +1,48 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Card from '../components/Card';
 
 export const query = graphql`
   query {
     file(relativePath: { eq: "avatar.jpg" }) {
-      id
+      childImageSharp {
+        fixed(width: 300) {
+          ...GatsbyImageSharpFixed
+        }
+      }
     }
   }
 `;
 
-const IndexPage = () => {
-  console.log(query);
+const Main = ({ data }) => (
+  <Layout>
+    <SEO title="Адвокат Андреев Сергей Сергеевич" />
 
-  return (
-    <Layout>
-      <SEO title="Адвокат Андреев Сергей Сергеевич" />
-      <Card>
-        <h2>Cопровождение сделок с недвижимостью любой сложности в Геленджике</h2>
+    <h1>Добро пожаловать!</h1>
+    <h2>
+      Я - профессиональный адвокат города Геленджик Андреев Сергей Сергеевич
+    </h2>
+    <h3>Опыт работы - 30 лет</h3>
 
-        <Link
-          style={{
-            fontWeight: 'bold',
-            color: 'rgb(255, 102, 0)',
-          }}
-          to="/soprovojdenie-sdelok-s-ndvijimostiy-in-gelendzhik"
-        >
-          Читать подробнее
-        </Link>
-      </Card>
-      <Card>
-        <h2>Представительство в суде города Геленджика</h2>
+    <p>При звонке сообщите, что нашли мой телефон на моем сайте.</p>
+    <p>
+      Тогда консультация будет
+      {' '}
+      <b>бесплатная!</b>
+    </p>
 
-        <Link
-          style={{
-            fontWeight: 'bold',
-            color: 'rgb(255, 102, 0)',
-          }}
-          to="/predstavitelstvo-v-sude-gelendzhik"
-        >
-          Читать подробнее
-        </Link>
-      </Card>
-      <Card>
-        <h2>
-          Составление исковых заявлений, жалоб, претензий в городе Геленджике
-        </h2>
-        <Link
-          style={{
-            fontWeight: 'bold',
-            color: 'rgb(255, 102, 0)',
-          }}
-          to="/sostavlenie-iskovih-zayavlenii"
-        >
-          Читать подробнее
-        </Link>
-      </Card>
+    <div
+      style={{ textAlign: 'center', borderRadius: '50%', margin: '20px 0' }}
+    >
+      <Img
+        style={{ borderRadius: '50%', maxWidth: '300px' }}
+        fixed={data.file.childImageSharp.fixed}
+      />
+    </div>
+  </Layout>
+);
 
-      <Card>
-        <h2>
-          Юридическая консультация в городе Геленджике
-        </h2>
-        <Link
-          style={{
-            fontWeight: 'bold',
-            color: 'rgb(255, 102, 0)',
-          }}
-          to="/yridicheskaya-konsultacia-gelendzhik"
-        >
-          Читать подробнее
-        </Link>
-      </Card>
-
-      <Card>
-        <h2>
-          Составление договоров купли-продажи, мены, дарения в городе Геленджике
-        </h2>
-        <Link
-          style={{
-            fontWeight: 'bold',
-            color: 'rgb(255, 102, 0)',
-          }}
-          to="/sostavlenie-dogovorov-gelendzhik"
-        >
-          Читать подробнее
-        </Link>
-      </Card>
-    </Layout>
-  );
-};
-
-export default IndexPage;
+export default Main;
