@@ -27,7 +27,17 @@ const Header = ({ siteTitle }) => (
             {siteTitle}
           </Link>
         </h1>
-        <h2 className="header__subtitle">8-918-111-11-11</h2>
+        <h2 className="header__subtitle">
+          Тел.
+          <div>
+            <div>
+              <a href="tel:8-928-260-26-37" className="header__subtitle_link">8-928-260-26-37</a>
+            </div>
+            <div>
+              <a href="tel:8-918-433-15-36" className="header__subtitle_link">8-918-433-15-36</a>
+            </div>
+          </div>
+        </h2>
       </div>
       <nav>
         <ul style={{
@@ -46,6 +56,8 @@ const Header = ({ siteTitle }) => (
                 fontWeight: 'bold',
                 color: 'white',
                 fontSize: '20px',
+                textDecoration: 'none',
+                fontFamily: '"Roboto", sans-serif',
               }}
             >
               Главная
@@ -62,6 +74,8 @@ const Header = ({ siteTitle }) => (
                 fontWeight: 'bold',
                 color: 'white',
                 fontSize: '20px',
+                textDecoration: 'none',
+                fontFamily: '"Roboto", sans-serif',
               }}
             >
               Опыт работы
@@ -78,6 +92,8 @@ const Header = ({ siteTitle }) => (
                 fontWeight: 'bold',
                 color: 'white',
                 fontSize: '20px',
+                textDecoration: 'none',
+                fontFamily: '"Roboto", sans-serif',
               }}
             >
               Услуги
@@ -94,6 +110,8 @@ const Header = ({ siteTitle }) => (
                 fontWeight: 'bold',
                 color: 'white',
                 fontSize: '20px',
+                textDecoration: 'none',
+                fontFamily: '"Roboto", sans-serif',
               }}
             >
               Контакты

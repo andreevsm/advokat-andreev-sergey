@@ -45,32 +45,31 @@ const Contacts = ({ data }) => (
 
       <div className="main">
         <p>
-          Адрес: 353460 Российская Федерация, Краснодарский край, г. Геленджик, ул. Полевая, № 41
+          Адрес: г. Геленджик, ул, Рыбникова, д.1
         </p>
         <div>
           <p>Тел.</p>
 
           <a
-            href="tel:+1234567890"
+            href="tel:8-928-260-26-37"
             style={{
               fontWeight: 'bold',
               color: 'rgb(255, 102, 0)',
             }}
           >
-            8 (928) 661-70-80,
+            8-928-260-26-37
           </a>
         </div>
         <div>
-          <p>Адрес электронной почты:</p>
-
+          <p>Почта:</p>
           <a
-            href="mailto:vlad@htmlbook.ru"
+            href="mailto:advokatsea@mail.ru"
             style={{
               fontWeight: 'bold',
               color: 'rgb(255, 102, 0)',
             }}
           >
-            futura-777@mail.ru
+            advokatsea@mail.ru
           </a>
         </div>
 
