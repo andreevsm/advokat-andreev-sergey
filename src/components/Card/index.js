@@ -1,12 +1,12 @@
 import React from 'react';
 
-import './index.scss';
+import styles from './card.module.scss';
 
 const Card = ({
   children,
 }) => (
-  <div className="card">
-    <div className="card__inner">
+  <div className={styles.card}>
+    <div className={styles.card__inner}>
       {children}
     </div>
   </div>

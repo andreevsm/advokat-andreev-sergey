@@ -2,11 +2,11 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import './index.scss';
+import styles from './header.module.scss';
 
 const Header = ({ siteTitle }) => (
 
-  <header className="header" style={{ padding: '0 10px' }}>
+  <header className={styles.header} style={{ padding: '0 10px' }}>
     <div style={{ maxWidth: 1024, width: '100%', margin: '0 auto' }}>
       <div
         style={{
@@ -27,14 +27,14 @@ const Header = ({ siteTitle }) => (
             {siteTitle}
           </Link>
         </h1>
-        <h2 className="header__subtitle">
+        <h2 className={styles.header__subtitle}>
           Тел.
           <div>
             <div>
-              <a href="tel:8-928-260-26-37" className="header__subtitle_link">8-928-260-26-37</a>
+              <a href="tel:8-928-260-26-37" className={styles.header__subtitle__link}>8-928-260-26-37</a>
             </div>
             <div>
-              <a href="tel:8-918-433-15-36" className="header__subtitle_link">8-918-433-15-36</a>
+              <a href="tel:8-918-433-15-36" className={styles.header__subtitle__link}>8-918-433-15-36</a>
             </div>
           </div>
         </h2>
