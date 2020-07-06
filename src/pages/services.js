@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import Layout from '../components/layout';
-import Card from '../components/Card';
+import Layout from '../layouts/layout';
+import {
+  Card,
+} from '../components';
 
 const Services = () => (
   <Layout>
@@ -24,7 +26,7 @@ const Services = () => (
             fontWeight: 'bold',
             color: 'rgb(255, 102, 0)',
           }}
-          to="/soprovojdenie-sdelok-s-ndvijimostiy-in-gelendzhik"
+          to="/services/soprovojdenie-sdelok-s-ndvijimostiy-in-gelendzhik"
         >
           Читать подробнее
         </Link>
@@ -37,7 +39,7 @@ const Services = () => (
             fontWeight: 'bold',
             color: 'rgb(255, 102, 0)',
           }}
-          to="/predstavitelstvo-v-sude-gelendzhik"
+          to="/services/predstavitelstvo-v-sude-gelendzhik"
         >
           Читать подробнее
         </Link>
@@ -51,7 +53,7 @@ const Services = () => (
             fontWeight: 'bold',
             color: 'rgb(255, 102, 0)',
           }}
-          to="/sostavlenie-iskovih-zayavlenii"
+          to="/services/sostavlenie-iskovih-zayavlenii"
         >
           Читать подробнее
         </Link>
@@ -64,7 +66,7 @@ const Services = () => (
             fontWeight: 'bold',
             color: 'rgb(255, 102, 0)',
           }}
-          to="/yridicheskaya-konsultacia-gelendzhik"
+          to="/services/yridicheskaya-konsultacia-gelendzhik"
         >
           Читать подробнее
         </Link>
@@ -79,7 +81,7 @@ const Services = () => (
             fontWeight: 'bold',
             color: 'rgb(255, 102, 0)',
           }}
-          to="/sostavlenie-dogovorov-gelendzhik"
+          to="/services/sostavlenie-dogovorov-gelendzhik"
         >
           Читать подробнее
         </Link>
