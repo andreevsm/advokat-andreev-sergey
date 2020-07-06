@@ -27,9 +27,25 @@ module.exports = {
         path: `${__dirname}/src/components`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'assets',
+        path: `${__dirname}/src/assets`,
+      },
+    },
     'gatsby-plugin-sass',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-react-css-modules',
+      options: {
+        filetypes: {
+          '.scss': { syntax: 'postcss-scss' },
+        },
+        exclude: 'global',
+      },
+    },
     // {
     //   resolve: 'gatsby-source-googlemaps-geocoding',
     //   options: {
