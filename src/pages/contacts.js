@@ -3,9 +3,7 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import Layout from '../layouts/layout';
-import {
-  SEO,
-} from '../components';
+import { SEO } from '../components';
 
 export const query = graphql`
   query {
@@ -24,7 +22,7 @@ export const query = graphql`
 const Contacts = ({ data }) => (
 
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Контакты" />
 
     <div>
 

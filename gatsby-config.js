@@ -2,6 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Адвокат Андреев Сергей Сергеевич',
     description: 'Услуги адвоката в городе Геленджик адвокат Андреев Сергей Сергеевич',
+    url: 'https://advokat-gelendzhik-andreev.ru',
+    image: '/src/images/avatar.jpg',
     author: '@andreevsm',
   },
   plugins: [

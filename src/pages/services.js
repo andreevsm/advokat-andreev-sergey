@@ -4,10 +4,13 @@ import { Link } from 'gatsby';
 import Layout from '../layouts/layout';
 import {
   Card,
+  SEO,
 } from '../components';
 
 const Services = () => (
   <Layout>
+    <SEO title="Услуги" />
+
     <h1>Услуги</h1>
     <div
       style={{
