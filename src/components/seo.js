@@ -73,6 +73,10 @@ function SEO({
           name: 'google-site-verification',
           content: 'qu8N4Hs9uZZZHGi7yCi2uSuMJX4bTSgHNIRTtxviVdc',
         },
+        {
+          name: 'yandex-verification',
+          content: 'e86d31f783efd42d',
+        },
       ].concat(meta)}
     />
   );
