@@ -22,7 +22,10 @@ export const query = graphql`
 const Contacts = ({ data }) => (
 
   <Layout>
-    <SEO title="Контакты" />
+    <SEO
+      title="Контакты"
+      description="Услуги адвоката в Геленджике. Адрес: г. Геленджик, ул, Рыбникова, д.1. Тел. +7(928)-260-26-37"
+    />
 
     <div>
 

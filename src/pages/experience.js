@@ -5,7 +5,10 @@ import { SEO } from '../components';
 
 const Experience = () => (
   <Layout>
-    <SEO title="Опыт работы" />
+    <SEO
+      title="Опыт работы"
+      description="Услуги адвоката в Геленджике. Опыт работы в гражданских и уголовных делах"
+    />
 
     <h1>Опыт работы</h1>
 
