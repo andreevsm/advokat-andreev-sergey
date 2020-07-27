@@ -5,10 +5,20 @@ module.exports = {
     url: 'https://advokat-gelendzhik-andreev.ru',
     image: '/src/images/avatar.jpg',
     author: '@andreevsm',
+    siteUrl: 'https://advokat-gelendzhik-andreev.ru',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-favicon',
+    'gatsby-plugin-advanced-sitemap',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://advokat-gelendzhik-andreev.ru',
+        sitemap: 'https://advokat-gelendzhik-andreev.ru/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
